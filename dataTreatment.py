@@ -1,10 +1,15 @@
 import os
+from nltk.corpus import wordnet as wn
+
 """
     This module will allow to prepare the data for using it in the search engine
 
     You will find the functions :
     - stopwordsDelete: for a giving song, delete all the stopwords
-    -
+    - getWordsId: gets the word list
+
+
+    - firstsTreatmentsOnFiles: final method writing the treated data
 """
 
 def stopwordsDelete(filename):
@@ -15,9 +20,9 @@ def stopwordsDelete(filename):
     :return: modified file (without stopwords in the songs)
     '''
     stopwords = open("stopwords.txt").readline().split(",")
-    wordsId = open("wordId.txt").readline().split(",")
+    wordsId = getWordsId()
     songs = open(filename).readlines()
-    stopwordsDeleted = open("resultScript.txt",'a')
+    stopwordsDeleted = open(filename[:-4]+"Result.txt",'a')
     for song in songs:
         song = song.split(",")
         for word in song[2:]:
@@ -28,5 +33,75 @@ def stopwordsDelete(filename):
         stopwordsDeleted.write(song+"\n")
     stopwordsDeleted.close()
 
-os.chdir("C:/Users/Laurine/Desktop/coursSciencesCo/S8/Information Retrieval/songsRetrieval")
-stopwordsDelete("scriptTest.txt")
+def getWordsId():
+    """
+    returns a the list of words and their place in the list is their id
+    """
+    return open("wordId.txt").readline().split(",")
+
+def getMostUsedWords(song,n):
+    #TODO list the most used words in the song
+    return []
+    
+def generateLexicalFields(word,n):
+    #TODO take a word and generates n hypernyms with wordnet
+    hypernymList = []
+
+
+    return hypernymList
+
+def writeResults():
+    #TODO write all the results in a single txt file
+    open("finalData.txt","w")
+
+
+
+def firstsTreatmentsOnFiles():
+    """
+    open our 3 corpus files
+    delete stop words
+    get the most used words
+    generate lexical fields and score
+    write song info, lexical fields, most used words into result file
+    """
+    corpus_filenames = ["mxm_dataset_test.txt","mxm_dataset_train.txt"]
+    songData_filename = "mxm_779k_matches.txt"
+
+    """
+    ============================================================
+    Use stopwordsDelete function on every file, update the names
+    ============================================================
+    """
+    for i, filename in enumerate(corpus_filenames):
+        stopwordsDelete(filename)
+        corpus_filenames[i] = filename+"Result.txt"
+
+    """
+    ============================================================
+    Generate Lexical fields
+    ============================================================
+    """
+    wordsId = getWordsId()
+    for i, filename in enumerate(corpus_filenames):
+        songs = open(filename).readlines()
+        n = 5
+        for s in songs :
+            words = getMostUsedWords(s,n)
+            for w in words :
+               generateLexicalFields(w,n)
+
+    """
+    ============================================================
+    Get artist and Title
+    ============================================================
+    """
+
+    """
+    ============================================================
+    Write the results
+    ============================================================
+    """
+
+    writeResults()
+
+
