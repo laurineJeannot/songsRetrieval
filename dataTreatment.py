@@ -1,5 +1,5 @@
 import os
-import song
+from song import Song
 from nltk.corpus import wordnet as wn
 
 """
@@ -20,6 +20,7 @@ def stopwordsDelete(filename):
     :param filename: file to apply the function
     :return: modified file (without stopwords in the songs)
     '''
+    print(filename)
     stopwords = open("stopwords.txt").readline().split(",")
     wordsId = getWordsId()
     songs = open(filename).readlines()
@@ -39,6 +40,23 @@ def getWordsId():
     returns a the list of words and their place in the list is their id
     """
     return open("wordId.txt").readline().split(",")
+
+def getListOfSongsAndWords(filename):
+    """
+    return a list of the form 
+    [
+    ['TRAAPKW128F428BC93', '5427582', '1:10', '2:7', '3:2', ...]
+    ['TRAAPKS128F92F9047', '1894097', '2:16', '3:5', '5:6', ...]
+    ... 
+    ]
+    """
+    songs = open(filename).readlines()[18:]
+    # f[17] is the list of words
+    # f[18] is the first song
+    for i, s in enumerate(songs) :
+        if "\n" in s : s = s[:-1]
+        songs[i] = s.split(",")
+    return(songs)
 
 def getMostUsedWords(song,n):
     #TODO list the most used words in the song
@@ -65,7 +83,8 @@ def firstsTreatmentsOnFiles():
     generate lexical fields and score
     write song info, lexical fields, most used words into result file
     """
-    corpus_filenames = ["mxm_dataset_test.txt","mxm_dataset_train.txt"]
+    directory="corpus\\"
+    corpus_filenames = ["mxm_dataset_test-test.txt","mxm_dataset_train-test.txt"]
     songData_filename = "mxm_779k_matches.txt"
 
     """
@@ -73,9 +92,9 @@ def firstsTreatmentsOnFiles():
     Use stopwordsDelete function on every file, update the names
     ============================================================
     """
-    for i, filename in enumerate(corpus_filenames):
-        stopwordsDelete(filename)
-        corpus_filenames[i] = filename+"Result.txt"
+    # for i, filename in enumerate(corpus_filenames):
+    #     stopwordsDelete(directory+filename)
+    #     corpus_filenames[i] = filename+"Result.txt"
 
     """
     ============================================================
@@ -83,10 +102,12 @@ def firstsTreatmentsOnFiles():
     ============================================================
     """
     wordsId = getWordsId()
-    for i, filename in enumerate(corpus_filenames):
-        songs = open(filename).readlines()
+    for filename in corpus_filenames:
+        songListWithWords = getListOfSongsAndWords(directory+filename)
         n = 5
-        for s in songs :
+        for s in songListWithWords :
+            song = Song(s[0],s[1])
+            print(song)
             words = getMostUsedWords(s,n)
             for w in words :
                generateLexicalFields(w,n)
@@ -103,6 +124,7 @@ def firstsTreatmentsOnFiles():
     ============================================================
     """
 
+
     writeResults()
 
-
+firstsTreatmentsOnFiles()
