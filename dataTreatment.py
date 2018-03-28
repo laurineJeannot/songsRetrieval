@@ -1,4 +1,5 @@
 import os
+import re
 from song import Song
 from nltk.corpus import wordnet as wn
 
@@ -43,11 +44,11 @@ def getWordsId():
 
 def getListOfSongsAndWords(filename):
     """
-    return a list of the form 
+    return a list of the form
     [
     ['TRAAPKW128F428BC93', '5427582', '1:10', '2:7', '3:2', ...]
     ['TRAAPKS128F92F9047', '1894097', '2:16', '3:5', '5:6', ...]
-    ... 
+    ...
     ]
     """
     songs = open(filename).readlines()[18:]
@@ -60,20 +61,47 @@ def getListOfSongsAndWords(filename):
 
 def getMostUsedWords(song,n):
     #TODO list the most used words in the song
-    return []
-    
+    song = song.split(",")[2:]
+    listeTriee = []
+    for word in song:
+        regex = re.compile(r'(\d*):(\d*)')
+        listeTriee.append(regex.search(word).groups())
+    listeTriee = sorted(listeTriee, key=lambda x: x[1],reverse=True)
+    return(listeTriee[0:n])
+
 def generateLexicalFields(word,n):
     #TODO take a word and generates n hypernyms with wordnet
     hypernymList = []
+    hyponymList = []
+    for word in words:
+    wordSyn = wn.synsets(word)
+    #on cherche les hyponymes
+    if wordSyn!=[]:
+        for synset in wordSyn[0:n]:
+            hypernymList.append(synset.hypernyms())
+            for elt in hypernymList:
+                hyponymList = elt.hyponyms()
+    #on formate les lexemes
+    for word in hyponymList:
+        word = word.replace("Synset('","")
+        word = word.replace(word[-7:],"")
+    return hyponymList
 
-
-    return hypernymList
-
-def writeResults():
+def writeResults(trackIds,words):
     #TODO write all the results in a single txt file
-    open("finalData.txt","w")
-
-
+    '''
+    Structure d'une ligne : trackId1;trackId2;mostUsedWords;lexicalFields
+    '''
+    file = open("finalData.txt","w")
+    resu = str(trackIds[0]+";"+trackIds[1]+";")
+    for word in words:
+        resu = resu + word +"("
+        lexField = generateLexicalFields(word,5)
+        for elt in lexField:
+            resu = resu + elt +";"
+        resu = resu + ")"
+    file.write(resu)
+    file.close()
 
 def firstsTreatmentsOnFiles():
     """
@@ -109,8 +137,9 @@ def firstsTreatmentsOnFiles():
             song = Song(s[0],s[1])
             print(song)
             words = getMostUsedWords(s,n)
-            for w in words :
-               generateLexicalFields(w,n)
+            #j'ai enlevé la fonction generateLexicalFields ici car je les génère dans l'écriture des résultats
+            trackIds = song.split(",")[0:2]
+            writeResults(trackIds,words)
 
     """
     ============================================================
@@ -123,8 +152,6 @@ def firstsTreatmentsOnFiles():
     Write the results
     ============================================================
     """
-
-
-    writeResults()
+    #déplacé dans "Generate Lexical Fields" pour enregistrer la ligne au fur et à mesure
 
 firstsTreatmentsOnFiles()
