@@ -25,7 +25,7 @@ class Song:
     def wordlist(self):
         string=""
         for w in self.words:
-            string += w + ","
+            string += str(w) + ","
         return string
             
 

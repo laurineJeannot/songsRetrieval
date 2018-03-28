@@ -2,6 +2,7 @@ import os
 import re
 from song import Song
 from nltk.corpus import wordnet as wn
+from langdetect import detect
 
 """
     This module will allow to prepare the data for using it in the search engine
@@ -77,47 +78,48 @@ def getListOfGlobalSongData():
 
 def getMostUsedWords(song,n):
     #TODO list the most used words in the song
-    song = song.split(",")[2:]
+    song = song[2:]
     listeTriee = []
     for word in song:
         regex = re.compile(r'(\d*):(\d*)')
         listeTriee.append(regex.search(word).groups())
     listeTriee = sorted(listeTriee, key=lambda x: x[1],reverse=True)
-    return(listeTriee[0:n])
+    w = getWordsId()
+    wordList = []
+    stopwords = open("stopwords.txt").readline().split(",")
+    for groups in listeTriee:
+        i,j = groups
+        word = w[int(i)]
+        if word not in stopwords :
+            wordList.append(w[int(i)])
+        if len(wordList) == n : 
+            break
+    return(wordList)
 
-def generateLexicalFields(word,n):
+def generateLexicalFields(words,n):
     #TODO take a word and generates n hypernyms with wordnet
     hypernymList = []
-    hyponymList = []
     for word in words:
         wordSyn = wn.synsets(word)
-    #on cherche les hyponymes
-    if wordSyn!=[]:
-        for synset in wordSyn[0:n]:
-            hypernymList.append(synset.hypernyms())
-            for elt in hypernymList:
-                hyponymList = elt.hyponyms()
-    #on formate les lexemes
-    for word in hyponymList:
-        word = word.replace("Synset('","")
-        word = word.replace(word[-7:],"")
-    return hyponymList
+        #on cherche les hyponymes
+        if wordSyn!=[]:
+            synset = wordSyn[0]
+            if synset.hypernyms() != [] :
+                hypernymList.append(synset.hypernyms()[0])
+    for i,word in enumerate(hypernymList):
+        hypernymList[i] = word.lemma_names()[0]
+    return hypernymList
 
-def writeResults(trackIds,words):
+def writeResults(song):
     #TODO write all the results in a single txt file
     '''
-    Structure d'une ligne : trackId1;trackId2;mostUsedWords;lexicalFields
+    Structure d'une ligne : TODO
     '''
-    file = open("finalData.txt","w")
-    resu = str(trackIds[0]+";"+trackIds[1]+";")
-    for word in words:
-        resu = resu + word +"("
-        lexField = generateLexicalFields(word,5)
-        for elt in lexField:
-            resu = resu + elt +";"
-        resu = resu + ")"
-    file.write(resu)
-    file.close()
+    data = open("finalData.txt","r").read()
+    file = open("finalData.txt","a")
+    line = song.__str__()
+    if line not in data :
+        file.write(line+"\n")
 
 def firstsTreatmentsOnFiles():
     """
@@ -142,7 +144,7 @@ def firstsTreatmentsOnFiles():
 
     """
     ============================================================
-    Generate Lexical fields
+    Get song data and generate Words and Lexical fields
     ============================================================
     """
     wordsId = getWordsId() 
@@ -153,32 +155,15 @@ def firstsTreatmentsOnFiles():
         n = 5
         for s in songListWithWords :
             song = Song(s[0],s[1])
-            words = getMostUsedWords(s,n)
-            print(words)
-            #j'ai enlevé la fonction generateLexicalFields ici car je les génère dans l'écriture des résultats
-            trackIds = song.split(",")[0:2]
-            writeResults(trackIds,words)
-
-    """
-    ============================================================
-    Get artist and Title
-    ============================================================
-    """
-            for w in words :
-               generateLexicalFields(w,n)
             #Get artist and Title
             #cette partie est déjà très longue en soit attention
             for sd in songGlobalData :
                 if song.tid == sd[0] :
                     song.artist = sd[1]
                     song.title = sd[2]
-                    print(song)
-
-    """
-    ============================================================
-    Write the results
-    ============================================================
-    """
-    #déplacé dans "Generate Lexical Fields" pour enregistrer la ligne au fur et à mesure
+            if (detect(song.title) == 'en'):
+                song.words = getMostUsedWords(s,n)
+                song.lexicalFields = generateLexicalFields(song.words,3)
+                writeResults(song)
 
 firstsTreatmentsOnFiles()
