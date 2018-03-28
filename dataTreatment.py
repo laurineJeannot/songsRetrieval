@@ -59,6 +59,22 @@ def getListOfSongsAndWords(filename):
         songs[i] = s.split(",")
     return(songs)
 
+def getListOfGlobalSongData():
+    """
+    return a list of the form 
+    [
+    [tid,artist name,title,mxm tid,artist_name,title],
+    ... 
+    ]
+    """
+    # f[17] is the last commentary
+    # f[18] is the first song
+    songs = open("corpus//mxm_779k_matches.txt",encoding="utf-8").readlines()[18:]
+    for i, s in enumerate(songs) :
+        if "\n" in s : s = s[:-1]
+        songs[i] = s.split("<SEP>")
+    return(songs)
+
 def getMostUsedWords(song,n):
     #TODO list the most used words in the song
     song = song.split(",")[2:]
@@ -74,7 +90,7 @@ def generateLexicalFields(word,n):
     hypernymList = []
     hyponymList = []
     for word in words:
-    wordSyn = wn.synsets(word)
+        wordSyn = wn.synsets(word)
     #on cherche les hyponymes
     if wordSyn!=[]:
         for synset in wordSyn[0:n]:
@@ -129,14 +145,16 @@ def firstsTreatmentsOnFiles():
     Generate Lexical fields
     ============================================================
     """
-    wordsId = getWordsId()
+    wordsId = getWordsId() 
+    #data with artist and song name
+    songGlobalData = getListOfGlobalSongData()
     for filename in corpus_filenames:
         songListWithWords = getListOfSongsAndWords(directory+filename)
         n = 5
         for s in songListWithWords :
             song = Song(s[0],s[1])
-            print(song)
             words = getMostUsedWords(s,n)
+            print(words)
             #j'ai enlevé la fonction generateLexicalFields ici car je les génère dans l'écriture des résultats
             trackIds = song.split(",")[0:2]
             writeResults(trackIds,words)
@@ -146,6 +164,15 @@ def firstsTreatmentsOnFiles():
     Get artist and Title
     ============================================================
     """
+            for w in words :
+               generateLexicalFields(w,n)
+            #Get artist and Title
+            #cette partie est déjà très longue en soit attention
+            for sd in songGlobalData :
+                if song.tid == sd[0] :
+                    song.artist = sd[1]
+                    song.title = sd[2]
+                    print(song)
 
     """
     ============================================================

@@ -1,0 +1,159 @@
+﻿# musiXmatch dataset - list of matches
+#     matches provided by musiXmatch based on artist names
+#     and song titles from the Million Song Dataset.
+# MORE INFORMATION:
+#     http://labrosa.ee.columbia.edu/millionsong/musixmatch
+# FORMAT:
+#     #    -> comment, ignore
+#     tid|artist name|title|mxm tid|artist_name|title
+#        tid          -> Million Song Dataset track ID
+#        artist name  -> artist name in the MSD
+#        title        -> title in the MSD
+#        mxm tid      -> musiXmatch track ID
+#        artist name  -> artist name for mXm
+#        title        -> title for mXm
+#        |            -> actual separator: <SEP>
+# QUESTIONS / COMMENTS
+#     tb2332@columbia.edu
+# Enjoy!
+TRMMMKD128F425225D<SEP>Karkkiautomaatti<SEP>Tanssi vaan<SEP>4418550<SEP>Karkkiautomaatti<SEP>Tanssi vaan
+TRMMMRX128F93187D9<SEP>Hudson Mohawke<SEP>No One Could Ever<SEP>8898149<SEP>Hudson Mohawke<SEP>No One Could Ever
+TRMMMCH128F425532C<SEP>Yerba Brava<SEP>Si Vos Querés<SEP>9239868<SEP>Yerba Brava<SEP>Si vos queres
+TRMMMXN128F42936A5<SEP>David Montgomery<SEP>Symphony No. 1 G minor "Sinfonie Serieuse"/Allegro con energia<SEP>5346741<SEP>Franz Berwald<SEP>Symphony No. 1 in G minor "Sinfonie Sérieuse": I. Allegro con energia
+TRMMMBB12903CB7D21<SEP>Kris Kross<SEP>2 Da Beat Ch'yall<SEP>2511405<SEP>Kris Kross<SEP>2 Da Beat Ch'yall
+TRMMMHY12903CB53F1<SEP>Joseph Locke<SEP>Goodbye<SEP>793273<SEP>Joseph LoDuca<SEP>Goodbye
+TRMMMNS128F93548E1<SEP>3 Gars Su'l Sofa<SEP>L'antarctique<SEP>7503609<SEP>3 gars su'l sofa<SEP>L'Antarctique
+TRMMMXJ12903CBF111<SEP>Jorge Negrete<SEP>El hijo del pueblo<SEP>7362052<SEP>Jorge Negrete<SEP>El hijo del pueblo
+TRMMMBW128F4260CAE<SEP>Tiger Lou<SEP>Pilots<SEP>7833814<SEP>Tiger Lou<SEP>Pilots
+TRMMMXI128F4285A3F<SEP>Waldemar Bastos<SEP>N Gana<SEP>2320200<SEP>Waldemar Bastos<SEP>N Gana
+TRMMMKI128F931D80D<SEP>Lena Philipsson<SEP>006<SEP>4280619<SEP>Lena Philipsson<SEP>006
+TRMMMUT128F42646E8<SEP>Shawn Colvin<SEP>(Looking For) The Heart Of Saturday<SEP>674743<SEP>Shawn Colvin<SEP>(Looking for) The Heart of Saturday Night
+TRMMMQY128F92F0EA3<SEP>Dying Fetus<SEP>Ethos of Coercion<SEP>8851472<SEP>Dying Fetus<SEP>Ethos of Coercion
+TRMMMTK128F424EF7C<SEP>Emery<SEP>Rock-N-Rule<SEP>9855482<SEP>Emery<SEP>Rock-N-Rule
+TRMMMQV12903CA201E<SEP>Rev. Timothy Wright<SEP>I Made It Over<SEP>610698<SEP>Rev. Timothy Wright<SEP>I Made It Over
+TRMMMPN128F426610E<SEP>Nicolette<SEP>Nervous<SEP>721926<SEP>Nicolette<SEP>Nervous
+TRMMMNO128F93539AA<SEP>Martin Sexton<SEP>In The Journey<SEP>1860322<SEP>Martin Sexton<SEP>In the Journey
+TRMMMTG128F426B5BB<SEP>Craze<SEP>Fuckin Ethic People (999)<SEP>620542<SEP>DJ Craze<SEP>Fuckin Ethic People (999)
+TRMMMPJ128F9306985<SEP>Christian Castro<SEP>Tu Vida Con La Mía<SEP>3578541<SEP>Christian Castro<SEP>Tu vida con la mia
+TRMMMRZ128F4265EB4<SEP>Aerosmith<SEP>I'm Ready<SEP>2124234<SEP>Aerosmith<SEP>I'm Ready
+TRMMMKD12903CF219E<SEP>Skinlab<SEP>Take As Needed<SEP>1093778<SEP>Skinlab<SEP>Take as Needed
+TRMMMJW12903CF239E<SEP>Piotta<SEP>Tequila<SEP>3462792<SEP>Piotta<SEP>Tequila
+TRMMMWA128F1462C8C<SEP>Sev Statik<SEP>All For A Purpose (Speak Life Album Version)<SEP>1941194<SEP>Sev Statik<SEP>All for a Purpose
+TRMMMQN128F4238509<SEP>Prince & The Revolution<SEP>Raspberry Beret (LP Version)<SEP>1078688<SEP>Prince & The Revolution<SEP>Raspberry Beret
+TRMMMKQ128F92EBCB5<SEP>Kreator<SEP>All of the same blood<SEP>1071669<SEP>Kreator<SEP>All of the Same Blood
+TRMMMQK128F428AB1F<SEP>Hall Of Fame<SEP>One Little Too Little<SEP>2843061<SEP>Hall of Fame<SEP>One Little Too Little
+TRMMMPU128F42B134D<SEP>Frank Chacksfield<SEP>Cockleshell Heroes<SEP>9320599<SEP>Frank Chacksfield<SEP>Cockleshell Heroes
+TRMMMYP128F429A5E4<SEP>Voyage<SEP>Trancesequence<SEP>1688425<SEP>Voyage<SEP>Trancesequence
+TRMMMKN12903CB44A5<SEP>Wishbone Ash<SEP>Wonderful Stash<SEP>6544020<SEP>Wishbone Ash<SEP>Wonderful Stash
+TRMMMUZ128F4238E64<SEP>Malavoi<SEP>La filo<SEP>3918722<SEP>Malavoi<SEP>La filo
+TRMMMTP128F4276193<SEP>Cobra Verde<SEP>Throw It Away<SEP>1815398<SEP>Cobra Verde<SEP>Throw It Away
+TRMMMSA128F425FA38<SEP>Lisa Brokop<SEP>Before He Kissed Me<SEP>1338599<SEP>Lisa Brokop<SEP>Before He Kissed Me
+TRMMMHS128F42A0971<SEP>The Emotions<SEP>Blessed<SEP>1135373<SEP>The Emotions<SEP>Blessed
+TRMMMDJ128F92CC9F6<SEP>Hawthorne Heights<SEP>Disaster [Demo Version]<SEP>7512990<SEP>Hawthorne Heights<SEP>Disaster (demo version)
+TRMMMBU128F9305AC3<SEP>The Maytals<SEP>Night And Day<SEP>3254947<SEP>Toots & The Maytals<SEP>Night and Day
+TRMMMFJ128F92E15AC<SEP>Neffa<SEP>Passione<SEP>7264035<SEP>Neffa<SEP>Passione
+TRMMMNI12903CE0AF1<SEP>Lil O<SEP>My Everything [Screwed] (feat. Trae The Truth)<SEP>8589413<SEP>Lil' O<SEP>My Everything (feat. Trae tha Truth)
+TRMMMFG128F425087B<SEP>Billy Idol<SEP>Scream<SEP>3465039<SEP>Billy Idol<SEP>Scream
+TRMMMLV128F14821BE<SEP>Out Of The Grey<SEP>He Is Not Silent (Out Of The Grey Album Version)<SEP>1001510<SEP>Out of the Grey<SEP>He Is Not Silent
+TRMMMLF128F4228771<SEP>Leo Marini<SEP>Acércate Más<SEP>7497639<SEP>Osvaldo Farrés<SEP>Acércate Más (Nat King Cole)
+TRMMMXD128F932AD86<SEP>Sheb Wooley<SEP>Mule Boogie<SEP>8029089<SEP>Sheb Wooley<SEP>Mule Boogie
+TRMMMQA128F14A454A<SEP>Diana Krall<SEP>Dancing In The Dark<SEP>755404<SEP>Diana Krall<SEP>Dancing in the Dark
+TRMMMGL128F92FD6AB<SEP>Clifford T. Ward<SEP>Mad About You<SEP>6821012<SEP>Clifford T. Ward<SEP>Mad About You
+TRMMWMW12903CC6062<SEP>Joe Diffie<SEP>Ships That Don't Come In<SEP>1724033<SEP>Joe Diffie<SEP>Ships That Don't Come In
+TRMMWDA128F9343B5B<SEP>Blackfoot<SEP>Saturday Night  (LP Version)<SEP>6140619<SEP>Blackfoot<SEP>Saturday Night
+TRMMWDL128F9300D5D<SEP>Stemm<SEP>On the Surface<SEP>5006517<SEP>Stemm<SEP>On the Surface
+TRMMWJS12903CBB7F5<SEP>Aerosmith<SEP>Remember (Walking In The Sand)<SEP>730669<SEP>Aerosmith<SEP>Remember (Walking in the Sand)
+TRMMWOM12903CB21B8<SEP>Hot Lips Page<SEP>Just Another Woman<SEP>12401396<SEP>Hot Lips Page<SEP>Just Another Woman
+TRMMWYF128F42557B7<SEP>David Fridlund<SEP>untitled<SEP>3219938<SEP>David Fridlund<SEP>[untitled]
+TRMMWZE12903D0EB43<SEP>Kultiration<SEP>Bakslag<SEP>3156278<SEP>Kultiration<SEP>Bakslag
+TRMMWVS12903CDD6FB<SEP>Ewigkeit<SEP>The New Way<SEP>5120827<SEP>Ewigkeit<SEP>The New Way
+TRMMWCK128F92D4800<SEP>Alpha 5.20<SEP>Cités dortoires (feat. 59 Grammes)<SEP>9668137<SEP>Alpha 5.20<SEP>Pression Sanguine
+TRMMWLD128F9301BF2<SEP>Tonex<SEP>Bring It<SEP>686792<SEP>Soulfly<SEP>Bring It
+TRMMWBU128F930B7CF<SEP>Finis Tasby<SEP>Sitting In My Window (Finis Tasby BMI)<SEP>6082996<SEP>Finis Tasby<SEP>Sitting in My Window
+TRMMWNY12903CF28D2<SEP>Warren Zevon<SEP>The Rest of the Night<SEP>1576953<SEP>Warren Zevon<SEP>The Rest of the Night
+TRMMWMT128F9345B1B<SEP>Andrea Klas<SEP>Ride<SEP>2900636<SEP>Andrea Klas<SEP>Ride
+TRMMWNB12903C9A959<SEP>The Soup Dragons<SEP>Passion Protein<SEP>4570651<SEP>The Soup Dragons<SEP>Passion Protein
+TRMMWQF12903CC0CAC<SEP>Write This Down<SEP>Redemption<SEP>9933245<SEP>Write This Down<SEP>Redemption
+TRMMWVB128F9312434<SEP>Radio Macandé<SEP>Dame Tus  Besos<SEP>1303365<SEP>Radio Macandé<SEP>Dame Tus Besos
+TRMMWNW128F931511B<SEP>Brigitte Fontaine<SEP>Le mauvais coton<SEP>9798980<SEP>Brigitte Fontaine<SEP>Le Mauvais Coton
+TRMMWFG128F92DFAA2<SEP>Hex<SEP>Subtek<SEP>9431887<SEP>Hex<SEP>Subtek
+TRMMWPD128F4247095<SEP>X-Perience<SEP>Dream Of Love<SEP>5617719<SEP>X-Perience<SEP>Dream of Love
+TRMMWQU12903CF447F<SEP>Diablo Swing Orchestra<SEP>Lucy Fears the Morning Star<SEP>8859768<SEP>Diablo Swing Orchestra<SEP>Lucy Fears the Morning Star
+TRMMWTW128F42783DD<SEP>John Williams<SEP>Fool on the Hill<SEP>9675465<SEP>John Williams<SEP>Lennon / McCartney (Arr. Brouwer) - Fool on the Hill
+TRMMWXK12903CDED07<SEP>Fucked Up<SEP>Baiting the Public<SEP>5405769<SEP>Fucked Up<SEP>Baiting the Public
+TRMMWHJ128F42869B2<SEP>The Surfaris<SEP>Wipeout<SEP>13843656<SEP>The Surfaris<SEP>Wipeout
+TRMMWAO128F93182D2<SEP>Kool Savas<SEP>Fick uns<SEP>12502153<SEP>Kool Savas<SEP>Fick Uns
+TRMMWVG12903CBF769<SEP>Prinz Porno<SEP>Wir Sind Die Jungs feat. Din & Smexer<SEP>4768233<SEP>Prinz Porno<SEP>Wer sind die Jungs (feat. Din & Smexer)
+TRMMWBR128F930E399<SEP>Lord T & Eloise<SEP>Make Dat Monet<SEP>6526022<SEP>Lord T & Eloise<SEP>Make Dat Monet
+TRMMWWE12903D067F2<SEP>Kingdom Come<SEP>Two Legged Sheep<SEP>5491830<SEP>Kingdom Come<SEP>Two Legged Sheep
+TRMMWAO128F42A53EB<SEP>Gemelli Diversi<SEP>Chi Sei Adesso<SEP>1915683<SEP>Gemelli Diversi<SEP>Chi sei adesso
+TRMMWCX128F92EF4C8<SEP>Alice In Videoland<SEP>Stuck On My Vision<SEP>4230512<SEP>Alice in Videoland<SEP>Stuck on My Vision
+TRMMWSE128F93041C5<SEP>Kristian Meurman<SEP>Joku muu<SEP>8637622<SEP>Kristian Meurman<SEP>Joku muu
+TRMMWJP12903CD8807<SEP>Felt<SEP>Whaleface (Instrumental)<SEP>9248595<SEP>Felt<SEP>Whaleface
+TRMMWJD12903CC0F05<SEP>Gangster Fun<SEP>Brown Paper Bag<SEP>3291323<SEP>Gangster Fun<SEP>Brown Paper Bag
+TRMMWTG128F4283F07<SEP>Roger Whittaker<SEP>You Needed Me<SEP>7740223<SEP>Roger Whittaker<SEP>You Needed Me
+TRMMWXW128F422976E<SEP>A.Human<SEP>Pacey Singer<SEP>7333180<SEP>A.Human<SEP>Pacey Singer
+TRMMWMR12903CF8643<SEP>Tiësto<SEP>Ride<SEP>7749204<SEP>Tiësto vs. Cary Brothers<SEP>Ride (Tiesto remix)
+TRMMWRF128F1462252<SEP>Ice Cube Featuring Chuck D<SEP>Endangered Species (Tales From The Darkside) (Remix) (Explicit) (Feat. Chuck D)<SEP>865870<SEP>Ice Cube<SEP>Endangered Species (Tales From the Darkside) (feat. Chuck D.)
+TRMMWJM128F4227255<SEP>Archie Roach<SEP>Summer Of My Life<SEP>1564939<SEP>Archie Roach<SEP>Summer of My Life
+TRMMWEZ128F1455EAC<SEP>Lester Flatt / Earl Scruggs / The Foggy Mountain Boys<SEP>Foggy Mountain Breakdown<SEP>2733788<SEP>Lester Flatt & Earl Scruggs & The Foggy Mountain Boys<SEP>Foggy Mountain Breakdown
+TRMMWJY128F1469B8A<SEP>Luis Eduardo Aute<SEP>What Matters Is Just You<SEP>6310504<SEP>Luis Eduardo Aute<SEP>What Matters Is Just You
+TRMMWAH128F92F9D00<SEP>Lonesome River Band<SEP>Southern Comfort<SEP>3246773<SEP>Lonesome River Band<SEP>Southern Comfort
+TRMMWYJ128EF358EA7<SEP>Retard-O-Bot<SEP>Something From Nothing<SEP>6155293<SEP>Retard-O-Bot<SEP>Something for Nothing
+TRMMWWX128F92DAF12<SEP>Michael Whalen<SEP>Half Light<SEP>3874300<SEP>Michael Whalen<SEP>First Light
+TRMMWPX128F14965B8<SEP>Mark Wills<SEP>High Low And In Between<SEP>1765742<SEP>Mark Wills<SEP>High Low and in Between
+TRMMWSG128F92DD9AB<SEP>Roberto Carlos<SEP>Detalles<SEP>7882687<SEP>Roberto Carlos<SEP>Detalles
+TRMMGDQ128F4277AE7<SEP>Fine China<SEP>Rock Can't Last Forever  (You Hate Me Hate Music Album Version)<SEP>1322000<SEP>Fine China<SEP>Rock Can't Last Forever
+TRMMGCB128E079651D<SEP>Morcheeba<SEP>Get Along (Feat: Pace Won) (Instrumental)<SEP>947540<SEP>Morcheeba<SEP>Get Along (feat. Pace Won)
+TRMMGQO12903CD4F19<SEP>Richard "Groove" Holmes<SEP>Caravan<SEP>11089017<SEP>Richard "Groove" Holmes<SEP>Caravan
+TRMMGPD128F42AA230<SEP>Lamb<SEP>Just Is<SEP>1129940<SEP>Lamb<SEP>Just Is
+TRMMGIL128F92DBA59<SEP>DJ Markitos<SEP>Inside Your Dreams<SEP>3163938<SEP>DJ Markitos<SEP>Inside Your Dreams
+TRMMGTX128F92FB4D9<SEP>Bacilos<SEP>Viejo<SEP>1303175<SEP>Bacilos<SEP>Viejo
+TRMMGBF128F931B836<SEP>Toyah<SEP>Victims of the Riddle [Vivisection]<SEP>1346397<SEP>Toyah<SEP>Victims of the Riddle (Vivisection)
+TRMMGBQ12903CDF86A<SEP>The Wolfmen<SEP>Kama Sutra<SEP>2797188<SEP>The Bonzo Dog Band<SEP>Kama Sutra
+TRMMGYY128F4289515<SEP>Fausto Leali<SEP>E non lo scorderò<SEP>4366100<SEP>Fausto Leali<SEP>E non lo scorderò
+TRMMGHM128F4270EA7<SEP>Link 80<SEP>What Can I Do?<SEP>653426<SEP>Link 80<SEP>What Can I Do?
+TRMMGMC12903CF7FF0<SEP>Spyro Gyra<SEP>Pacific Sunrise<SEP>2429761<SEP>Spyro Gyra<SEP>Pacific Sunrise
+TRMMGDG12903CDB0E8<SEP>White Willow<SEP>Gnostalgia<SEP>1410926<SEP>White Willow<SEP>Gnostalgia
+TRMMGPB128F428B04A<SEP>Robbie Williams<SEP>Sin Sin Sin (Sentience Loney Mix)<SEP>4279431<SEP>Robbie Williams<SEP>Sin Sin Sin
+TRMMGEG12903CB4CFC<SEP>Prager Handgriff<SEP>Bihac<SEP>4584817<SEP>Prager Handgriff<SEP>Bihac
+TRMMGAX128F428FD18<SEP>American Boychoir<SEP>Praise_ My Soul_ The King Of Heaven<SEP>2444038<SEP>The American Boychoir<SEP>Praise, My Soul, the King of Heaven
+TRMMGGP128F934AD1D<SEP>Thought Industry<SEP>Edward Smith<SEP>595965<SEP>Thought Industry<SEP>Edward Smith
+TRMMGEU12903CF009A<SEP>Red Animal War<SEP>Dark Country<SEP>1918767<SEP>Red Animal War<SEP>Dark Country
+TRMMGST128F92F25EC<SEP>Lonesome River Band<SEP>Highway Paved With Pain<SEP>4198081<SEP>Lonesome River Band<SEP>Highway Paved With Pain
+TRMMGRZ12903CE1C82<SEP>Jason Becker<SEP>End Of The Beginning (Album Version)<SEP>787959<SEP>Jason Becker<SEP>End of the Beginning
+TRMMGUF12903CB279D<SEP>Sunscreem<SEP>Britannia<SEP>9461332<SEP>Sunscreem<SEP>Britannia
+TRMMGPI128F932E6D7<SEP>Motormark<SEP>I'm About To Do Something (That I'm Gonna Regret)<SEP>3103434<SEP>Motormark<SEP>I'm About to do Something (That I'm Gonna Regret)
+TRMMGYR128F4282BAE<SEP>Underworld<SEP>Ring Road<SEP>6543947<SEP>Underworld<SEP>Ring Road
+TRMMGTM128F930282D<SEP>Airscape<SEP>LEsperanza<SEP>2604007<SEP>Airscape<SEP>L Esperanza
+TRMMGPL12903CCDB98<SEP>Neal Morse<SEP>That Crutch<SEP>6050645<SEP>Neal Morse<SEP>That Crutch
+TRMMGDP128F933E59A<SEP>Al Green<SEP>I Say A Little Prayer<SEP>5377534<SEP>Al Green<SEP>I Say a Little Prayer
+TRMMGJZ128F4270235<SEP>The Muffins<SEP>Dawning Star<SEP>4255395<SEP>The Muffins<SEP>Dawning Star
+TRMMGKQ128F934B4CE<SEP>The Funky Lowlives<SEP>Irreplaceable<SEP>2663913<SEP>The Funky Lowlives<SEP>Irreplaceable
+TRMMGCK128F932EC2E<SEP>Brian Vander Ark<SEP>And Then You Went Away<SEP>9139662<SEP>Brian Vander Ark<SEP>And Then You Went Away
+TRMMGKX128F421ADC1<SEP>Debbie Davies<SEP>You Don't Know What You're Doing<SEP>6081435<SEP>Debbie Davies<SEP>You Don't Know What You're Doing
+TRMMGNC12903CABD4A<SEP>Boo Hewerdine<SEP>Touched (Intro: From 'That Winter' By Pamela Gillilan)<SEP>3401182<SEP>Boo Hewerdine<SEP>Touched
+TRMMGSH128F4243869<SEP>Katatonia<SEP>Day<SEP>9008366<SEP>Katatonia<SEP>Day and Then the Shade
+TRMMGGU128F14A93DD<SEP>Zen Cafe<SEP>En oo koskaan tavannut<SEP>1679564<SEP>Zen Café<SEP>En oo koskaan tavannut
+TRMMGUF12903CAFF44<SEP>Warlocks<SEP>Militant Musicfreaks<SEP>4241890<SEP>Warlocks<SEP>Militant Musicfreaks
+TRMMGIB12903D043E5<SEP>Luis Bacalov<SEP>The Color Of The Water / Dreaming Of The Future<SEP>8862459<SEP>Luis Bacalov<SEP>The Color of the Water / Dreaming of the Future
+TRMMGKT12903CA6C1A<SEP>AJP<SEP>Nothing More to Say<SEP>1805293<SEP>David Ryan Harris<SEP>Nothing More to Say
+TRMMGER128F9324C09<SEP>La Souris Déglinguée<SEP>Rock'n'roll vengeance<SEP>5857421<SEP>La Souris déglinguée<SEP>Rock n' Roll Vengeance
+TRMMGVE128F427B346<SEP>Mickey 3D<SEP>Qui ? (version baba cool)<SEP>12537962<SEP>Mickey 3D<SEP>Qui ? (version Baba Cool)
+TRMMGXC12903CB18F6<SEP>Glen Glenn<SEP>Laurie Ann<SEP>9022372<SEP>Glen Glenn<SEP>Laurie Ann
+TRMMGRT128F93517C1<SEP>Sofia Karlsson<SEP>Näckaspel<SEP>6661369<SEP>Sofia Karlsson<SEP>Näckaspel
+TRMMGZH128F14AE4CF<SEP>STEVE TAYLOR<SEP>Whatcha Gonna Do When Your Number's Up?   (The Best We Could Find Album Version)<SEP>1785627<SEP>Steve Taylor<SEP>Whatcha Gonna Do When Your Number's Up?
+TRMMGMB128F9321A3E<SEP>Junkyard<SEP>Waste of Time<SEP>3854179<SEP>Junkyard<SEP>Waste of Time
+TRMMHOK128F4273A4E<SEP>JK<SEP>Deep in the night<SEP>2642038<SEP>JK<SEP>Deep in the Night
+TRMMHGT128F42B91AD<SEP>Teairra Marí<SEP>Make Her Feel Good<SEP>3925282<SEP>Teairra Marí<SEP>Make Her Feel Good
+TRMMHTC12903C9AF55<SEP>Morrissey<SEP>Margaret On The Guillotine (LP Version)<SEP>1466203<SEP>Morrissey<SEP>Margaret on the Guillotine
+TRMMHBF12903CF6E59<SEP>Laurel & Hardy<SEP>At the Ball_ That's All<SEP>1330307<SEP>Laurel & Hardy<SEP>At the Ball, That's All
+TRMMHWI128F423B6AD<SEP>Pestilence<SEP>Presence Of The Dead (Album Version)<SEP>1550751<SEP>Pestilence<SEP>Presence of the Dead
+TRMMHDI128F42442F4<SEP>Biffy Clyro<SEP>Love Has A Diameter<SEP>6228678<SEP>Biffy Clyro<SEP>Love Has a Diameter
+TRMMHBW12903CAFDE7<SEP>Mental Overdrive<SEP>Communion<SEP>6665464<SEP>Mental Overdrive<SEP>Communion
+TRMMHRD128F4243970<SEP>Exhumed<SEP>No quarter<SEP>4060021<SEP>Exhumed<SEP>No Quarter
+TRMMHIC128F92E8AE7<SEP>Johnny Cash<SEP>Rowboat<SEP>692229<SEP>Johnny Cash<SEP>Rowboat
+TRMMHAK128F42667CA<SEP>Derek Trucks;Solomon Burke<SEP>Home In Your Heart<SEP>1101040<SEP>The Derek Trucks Band<SEP>Home In Your Heart (Feat. Solomon Burke)
+TRMMHGC128F9338059<SEP>New York Rel-X<SEP>Sold Out Of Love<SEP>5226988<SEP>New York Rel-X<SEP>Sold Out Of Love
+TRMMHYH128F4262566<SEP>Sensations<SEP>He's So Brave<SEP>4727301<SEP>Sensations<SEP>He's So Brave
+TRMMHEG128F42783F1<SEP>Bad Dreams Fancy Dress<SEP>Rave Up<SEP>4897884<SEP>Bad Dream Fancy Dress<SEP>Rave Up
