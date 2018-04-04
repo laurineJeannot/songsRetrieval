@@ -1,0 +1,1 @@
+TRDNCLY128F9345A2D,2870051,The DoomSword,DoomSword,w:world,lord,fear,pray,sign,lf:natural_object,emotion,commune,clue

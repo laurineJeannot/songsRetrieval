@@ -1,0 +1,1 @@
+TRATTMO12903CE0459,640140,The Liar,Adolescents,w:world,say,new,lie,man,lf:natural_object,opportunity,falsehood,adult

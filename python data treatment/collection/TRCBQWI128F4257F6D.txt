@@ -1,0 +1,1 @@
+TRCBQWI128F4257F6D,3062808,Turn Out the Lights,Tycoon,w:let,day,time,night,eye,lf:time_unit,case,time_period,sense_organ

@@ -1,0 +1,1 @@
+TRDBLAA128F427E68B,7336600,South Pole Fighters,The Damage Manual,w:walk,blade,breath,white,desert,lf:locomotion,leaf,bodily_process,person,biome

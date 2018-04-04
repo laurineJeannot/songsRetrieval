@@ -1,0 +1,1 @@
+TRARUTI12903CB2B37,2093146,Wonder of Life,Tukan,w:light,night,keep,star,ten,lf:actinic_radiation,time_period,resource,celestial_body,large_integer

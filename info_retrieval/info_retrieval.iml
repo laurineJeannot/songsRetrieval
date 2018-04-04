@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../Lucene Index" />
+          <root url="file://$MODULE_DIR$/../Lucene Index" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/analyzers-common" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/analyzers-icu" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/analyzers-kuromoji" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/analyzers-morfologik" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/analyzers-phonetic" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/analyzers-smartcn" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/analyzers-stempel" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/analyzers-uima" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/backward-codecs" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/benchmark" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/classification" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/codecs" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/core" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/demo" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/expressions" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/facet" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/grouping" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/highlighter" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/join" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/memory" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/misc" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/queries" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/queryparser" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/replicator" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/sandbox" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/spatial" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/spatial-extras" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/spatial3d" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/suggest" />
+          <root url="file://$MODULE_DIR$/../Lucene Index/lucene-7.2.1/docs/test-framework" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../Lucene Index/src" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/../Lucene Index" recursive="false" />
+      </library>
+    </orderEntry>
+  </component>
+</module>

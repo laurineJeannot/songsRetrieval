@@ -1,0 +1,1 @@
+TRAPVMC128F92C5412,1152872,Burned Out,Bedhead,w:thing,chang,make,fall,light,lf:situation,kind,season,actinic_radiation

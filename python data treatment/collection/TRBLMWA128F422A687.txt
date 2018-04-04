@@ -1,0 +1,1 @@
+TRBLMWA128F422A687,4228974,Out In The Fields,PRIMAL FEAR,w:away,heartbeat,fall,just,day,lf:periodic_event,season,time_unit

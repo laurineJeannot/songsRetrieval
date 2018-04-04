@@ -1,0 +1,1 @@
+TRCKARC128F92EA2C8,714437,Hallowed Point,Slayer,w:kill,gun,life,use,blood,lf:termination,weapon,being,activity,liquid_body_substance

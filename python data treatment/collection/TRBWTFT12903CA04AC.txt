@@ -1,0 +1,1 @@
+TRBWTFT12903CA04AC,7118383,Opposite Way,Leeland,w:way,opposit,s,cross,run,lf:property,time_unit,structure,score

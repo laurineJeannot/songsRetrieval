@@ -1,0 +1,1 @@
+TRBPZTP128F92D82AE,1205858,Now I Fall,Wolfsheim,w:day,fall,light,left,dark,lf:time_unit,season,actinic_radiation,position,illumination

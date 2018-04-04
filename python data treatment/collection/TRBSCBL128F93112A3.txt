@@ -1,0 +1,1 @@
+TRBSCBL128F93112A3,6136010,Pay Me a Dollar,Flatfoot 56,w:s,right,tonight,pay,ll,lf:time_unit,abstraction,present,regular_payment

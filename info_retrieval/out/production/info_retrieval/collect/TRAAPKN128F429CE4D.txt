@@ -1,0 +1,1 @@
+TRAAPKN128F429CE4D,6392487,Bricks,Tunng,w:free,brick,around,let,away,lf:people,building_material
